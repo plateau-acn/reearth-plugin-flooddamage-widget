@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>操作マニュアル </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="操作マニュアル ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="操作マニュアル">操作マニュアル</h1>
+
+<h1 id="1-本書について">1 本書について</h1>
+<p>本書では、SAR衛星解析による洪水被害の推定結果の可視化を行うRe:Earthプラグイン（以下「本システム」という。）の操作手順について記載しています。</p>
+<h1 id="2-使い方">2 使い方</h1>
+<h2 id="2-1-シーンの編集">2-1 シーンの編集</h2>
+<p>本システムを利用するにあたり、Re:Earthのシーンの編集を行います。
+シーンをクリックすることにより画面右側でシーンの設定が行える。
+地形をON、種類を「Cesium Ion」にし、Cesium IonアセットIDとCesium Ionアクセストークンを入力する。
+<a href="https://github.com/Project-PLATEAU/plateau-streaming-tutorial/blob/main/terrain/plateau-terrain-streaming.md">PLATEAU-Terrainの配信チュートリアル</a>から、アクセストークン及びアセットIDを取得することができる。
+先進的機能を使用をONにする。</p>
+<p><img src="../resources/userMan/tutorial_006.png" alt="">
+<img src="../resources/userMan/tutorial_007.png" alt=""></p>
+<h2 id="2-2-3d都市モデルの追加設定">2-2 3D都市モデルの追加・設定</h2>
+<p>① 3D都市モデルレイヤーの追加
+・画面上部の3D都市モデルのアイコンを地図上へドラッグ＆ドロップすることで3D都市モデルのレイヤーを追加する。</p>
+<p><img src="../resources/userMan/tutorial_008.png" alt=""></p>
+<p>② 3D都市モデルの設定</p>
+<p>・レイヤーに3Dタイルが追加されているため、クリックすることでレイヤーの設定が行える。
+・タイルセットURLから、3D都市モデルのtileset.jsonのURLを入力する。
+・インフォボックスの設定を開き、インフォボックスの作成を押下する。
+・インフォボックスに3D-Tile Injectorを追加する。
+・インフォボックスの背景色を「#d9d9d9ff」に設定する。</p>
+<p><img src="../resources/userMan/tutorial_009.png" alt="">
+<img src="../resources/userMan/tutorial_010.png" alt=""></p>
+<h2 id="2-3-ウィジェットの設定">2-3 ウィジェットの設定</h2>
+<h3 id="2-3-1-ウィジェットの追加">2-3-1 ウィジェットの追加</h3>
+<p>・ウィジェットの「＋」ボタンを押下し、「罹災証明書発行支援プラグイン」ウィジェットと「レイヤー管理」ウィジェットを追加します。</p>
+<p><img src="../resources/userMan/tutorial_011.png" alt=""></p>
+<h3 id="2-3-2-罹災証明書発行支援プラグインウィジェットの設定">2-3-2 「罹災証明書発行支援プラグイン」ウィジェットの設定</h3>
+<p>① 衛星画像の解析結果のデータ入力</p>
+<p>・データリストを追加することで、ダッシュボード部の「衛星画像の取得日時」で選択できる項目を追加する。
+・データリストに衛星画像の解析結果のタイトルと建物被災データの入力を行う。</p>
+<p>② 被災建物リスト（CSV形式）と3D都市モデルの連動</p>
+<p>・行政区分図を追加する。
+・行政区分図の名称を設定する。
+・3D都市モデルのタイトルを入力する。</p>
+<p><img src="../resources/userMan/tutorial_012.png" alt=""></p>
+<h2 id="2-3-3-レイヤー管理ウィジェットの設定">2-3-3 「レイヤー管理」ウィジェットの設定</h2>
+<p>① ベースマップの設定とウィジェットのリソース設定
+・ベースマップの選択を行えるように、タイルリストを追加する。
+・ベースマップとサムネイル画像とタイトルを設定することで、プラグイン上でベースマップの切り替えが行えるようになります。
+・3D都市モデルのタイトルを入力する。
+・「罹災証明書発行支援プラグイン」ウィジェットで設定した行政区分図の名称を入力する。
+・e-Stat非就業者世帯数のデータを設定する。
+・解析の対象外とする方位をプルダウンから選択するとともに、解析の対象外とする面積と傾きの基準値をテキストボックスに入力します。</p>
+<p><img src="../resources/userMan/tutorial_013.png" alt=""></p>
+<p>② 表示データの設定</p>
+<p>・データリストを追加することで、ダッシュボード部の「衛星画像の取得日時」と連動して表示するデータが切り替えられる。
+・衛星画像の解析結果のタイトルとデータを入力する。入力するデータは以下の通りである。
+| 名称 | 内容 |
+| --- | --- |
+| 浸水域2D表現 | 衛星解析によって得られる浸水域のXYZタイルデータ |
+| 浸水域3D表現（点群） | 衛星解析によって得られる浸水域の点群の3Dタイルデータ |
+| 浸水域3D表現（ポリゴン） | 衛星解析によって得られる浸水域を3Dのポリゴンデータ化したもの |
+| 床上(木造)データ | 衛星解析によって得られる床上浸水（木造）のヒートマップ |
+| 床下(木造)データ | 衛星解析によって得られる床下浸水（木造）のヒートマップ |
+| 木造家屋総数データ | 衛星解析によって得られる木造家屋総数のヒートマップ |</p>
+<p><img src="../resources/userMan/tutorial_014.png" alt=""></p>
+<h2 id="2-4-ウィジェットの操作">2-4 ウィジェットの操作</h2>
+<p>① 罹災証明書発行プラグインウィジェット</p>
+<p>・衛星画像の取得日時で表示する衛星画像を選択できる。
+・被災建物総数と建物総数、被災カテゴリ毎の被災建物件数と建物件数が表示される。</p>
+<p><img src="../resources/userMan/tutorial_015.png" alt=""></p>
+<p>・町丁目被災建物件数を押下し、町丁目を選択する。町丁目は検索することもできる。
+・選択地域の被災建物総数と建物総数、被災カテゴリ毎の被災建物件数と建物件数が表示される。</p>
+<p><img src="../resources/userMan/tutorial_016.png" alt=""></p>
+<p>・被災カテゴリ毎の色分け設定を編集することができる。
+・ダウンロードボタンを押下することで、選択地域別集計データ、建物毎の集計データと、被災カテゴリ毎の色分け設定用のスタイルを保存できる。</p>
+<p><img src="../resources/userMan/tutorial_017.png" alt="">
+② レイヤー管理ウィジェット</p>
+<p>・データの表示／非表示が選択できる。
+・表示するデータをインポートすることもできる。</p>
+<p><img src="../resources/userMan/tutorial_018.png" alt=""></p>
+<h1 id="3-出力データ">3 出力データ</h1>
+<p>出力されるデータは以下のとおりです。</p>
+<table>
+<thead>
+<tr>
+<th>機能</th>
+<th>出力データ</th>
+<th>内容</th>
+<th>データ形式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>罹災証明書発行プラグイン</td>
+<td>選択地域別集計データ</td>
+<td>選択した地域別の集計データ。</td>
+<td>CSV</td>
+</tr>
+<tr>
+<td></td>
+<td>建物毎の集計データ</td>
+<td>建物毎の属性値が付与された集計データ。</td>
+<td>CSV</td>
+</tr>
+<tr>
+<td></td>
+<td>被災カテゴリ毎の色分け設定用のスタイル</td>
+<td>被災カテゴリ毎の色分け設定用の3DTiles用のスタイルファイル。</td>
+<td>JSON</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-1-選択地域別集計データ">3-1 選択地域別集計データ</h2>
+<p>罹災証明書発行プラグインにより選択した地域別の被災カテゴリ毎の被災被災建物総数が集計されたデータが出力されます。</p>
+<h2 id="3-2-建物毎の集計データ">3-2 建物毎の集計データ</h2>
+<p>罹災証明書発行プラグインにより建物毎の属性値が付与された集計データが出力されます。</p>
+<h2 id="3-3-被災カテゴリ毎の色分け設定用のスタイル">3-3 被災カテゴリ毎の色分け設定用のスタイル</h2>
+<p>罹災証明書発行プラグインにより被災カテゴリ毎の色分け設定用の3DTiles用のスタイルファイルが出力されます。</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

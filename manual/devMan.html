@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>インストール手順書 </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="インストール手順書 ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../resources/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="インストール手順書">インストール手順書</h1>
+
+<h1 id="1-本書について">1 本書について</h1>
+<p>本書では、SAR衛星解析による洪水被害の推定結果の可視化を行うRe:Earthプラグイン（以下「本システム」という。）の利用環境構築手順について記載しています。本システムの構成や仕様の詳細については以下も参考にしてください。</p>
+<p><a href="https://www.mlit.go.jp/XXX">技術検証レポート</a></p>
+<h1 id="2-動作環境">2 動作環境</h1>
+<p>本システムの動作環境は以下のとおりです。</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>最小動作環境</th>
+<th>推奨動作環境</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OS</td>
+<td>Webブラウザが動作する全てのデスクトップOS（Windows, macOS, Linux, Chrome OS）やモバイルOS（iOS、Andorid）に対応</td>
+<td>同左</td>
+</tr>
+<tr>
+<td>対応ブラウザ</td>
+<td>Chrome 58_ <br> Firefox 57+ <br> Safari 11+（macOSのみ） <br> Microsoft Edge XX 以降 <br> iOS(11+) Safari <br> Android(10+) Chrome</td>
+<td>同左</td>
+</tr>
+<tr>
+<td>ディスプレイ解像度</td>
+<td>1000×700以上</td>
+<td>同左</td>
+</tr>
+<tr>
+<td>ネットワーク</td>
+<td>必要</td>
+<td>同左</td>
+</tr>
+</tbody>
+</table>
+<h1 id="3-インストール手順">3 インストール手順</h1>
+<p><a href="https://github.com/Project-PLATEAU/reearth-plugin-flooddamage-widget/releases/">こちら</a>
+から本システムをダウンロードします。</p>
+<p>ダウンロード後、プラグインをインストールしたいRe:Earthのプロジェクトを開きます。
+画面上部のRe:Earthのプロジェクト名をクリックし、プラグインの設定画面を開きます。
+<img src="../resources/userMan/tutorial_017.png" alt=""></p>
+<p>個人インストール済みタブを押下し、PCからZipファイルをアップロードからダウンロードしたZipファイルを選択します。
+インストール済みにプラグインがインストールされていれば、プラグインのインストールは完了です。
+<img src="../resources/userMan/tutorial_018.png" alt=""></p>
+<h1 id="4-準備物一覧">4 準備物一覧</h1>
+<p>アプリケーションを利用するために以下のデータを入手します。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>データ種別</th>
+<th>機能</th>
+<th>用途</th>
+<th>入力方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①</td>
+<td>3D都市モデル(CityGML)G空間情報センターから取得します。<br>https://front.geospatial.jp/</td>
+<td>全般</td>
+<td>全般</td>
+<td>3DTilesのtileset.jsonのURLを指定</td>
+</tr>
+<tr>
+<td>②</td>
+<td>建物被災状況　SAR衛星解析による洪水被害の推定システムから取得します。<br>https://github.com/Project-PLATEAU/SAR-image-based-flood-damage-detector</td>
+<td>全般</td>
+<td>全般</td>
+<td>CSVファイルのURLを指定</td>
+</tr>
+<tr>
+<td>③</td>
+<td>3D浸水域・浸水深の画像タイル　SAR衛星解析による洪水被害の推定システムから取得します。<br>https://github.com/Project-PLATEAU/SAR-image-based-flood-damage-detector</td>
+<td>レイヤー管理ウィジェット</td>
+<td>データの表示／非表示</td>
+<td>画像タイルのURLを指定</td>
+</tr>
+<tr>
+<td>④</td>
+<td>浸水域・浸水深の3Dタイルデータ　SAR衛星解析による洪水被害の推定システムから取得します。<br>https://github.com/Project-PLATEAU/SAR-image-based-flood-damage-detector</td>
+<td>レイヤー管理ウィジェット</td>
+<td>データの表示／非表示</td>
+<td>3DTilesのtileset.jsonのURLを指定</td>
+</tr>
+<tr>
+<td>⑤</td>
+<td>被災建物のヒートマップ画像タイル　SAR衛星解析による洪水被害の推定システムから取得します。<br>https://github.com/Project-PLATEAU/SAR-image-based-flood-damage-detector</td>
+<td>レイヤー管理ウィジェット</td>
+<td>データの表示／非表示</td>
+<td>画像タイルのURLを指定</td>
+</tr>
+<tr>
+<td>⑥</td>
+<td>町丁目データ e-Statから取得します。<br>https://www.e-stat.go.jp/help/view-on/map/boundary_data</td>
+<td>全般</td>
+<td>全般</td>
+<td>Re:Earthのアセットに登録してファイルを指定</td>
+</tr>
+<tr>
+<td>⑦</td>
+<td>非就業者世帯数の分布 e-Statから取得します。<br>https://www.e-stat.go.jp/</td>
+<td>レイヤー管理ウィジェット</td>
+<td>データの表示／非表示</td>
+<td>Re:Earthのアセットに登録してファイルを指定</td>
+</tr>
+</tbody>
+</table>
+<p>本システムでは、3D都市モデルの建築物モデルの形状（LOD1）と属性を活用します。</p>
+<table>
+<thead>
+<tr>
+<th>地物</th>
+<th>地物型</th>
+<th>属性区分</th>
+<th>属性名</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>建築物LOD1</td>
+<td>bldg:Building</td>
+<td>主題属性</td>
+<td>bldg:measuredHeight</td>
+<td>計測高さ</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>uro:buildingID</td>
+<td>建物ID</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>uro:buildingStructureType</td>
+<td>構造種別</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>空間属性</td>
+<td>bldg:lod1Solid</td>
+<td>建築物のLOD1の立体</td>
+</tr>
+</tbody>
+</table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
